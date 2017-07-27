@@ -1,0 +1,5 @@
+- @services.each do |service|
+  %h2= link_to service.title, service
+  %p= service.partner
+
+= link_to "New Service", new_service_path

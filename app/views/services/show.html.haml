@@ -1,0 +1,7 @@
+%h1= @service.title
+%p= @service.description
+%p= @service.partner
+
+= link_to "Home", root_path
+= link_to "Edit", edit_service_path(@service)
+= link_to "Delete", service_path(@service), method: :delete, data: { confirm: "Are you sure?" }

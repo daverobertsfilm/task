@@ -1,0 +1,7 @@
+= simple_form_for(@service, html: { class: 'form-horizontal'}) do |f|
+	= f.input :title, label: "service title"
+	= f.input :description, label: "service description"
+	= f.input :partner, label: "partner"
+	%br/
+
+	= f.button :submit
